@@ -16,7 +16,7 @@ namespace Курсовая_4к
         {
             InitializeComponent();
         }
-        public int id_client
+        public int id_client//в textbox1 передаётся id клиента
         {
             get { return Convert.ToInt32(textBox1.Text); }
             set { textBox1.Text = Convert.ToString(value); }
@@ -38,13 +38,13 @@ namespace Курсовая_4к
         }
         public string phoneNumber
         {
-            get { return textBox6.Text; }
-            set { textBox6.Text = value; }
+            get { return textBox5.Text; }
+            set { textBox5.Text = value; }
         }
         public int releaseYear
         {
-            get { return Convert.ToInt32(textBox5.Text); }
-            set { textBox5.Text = Convert.ToString(value); }
+            get { return Convert.ToInt32(textBox6.Text); }
+            set { textBox6.Text = Convert.ToString(value); }
         }
         private void клиентыBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -63,6 +63,12 @@ namespace Курсовая_4к
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.textBox1.Text = "";
+            this.textBox2.Text = "";
+            this.textBox3.Text = "";
+            this.textBox4.Text = "";
+            this.textBox5.Text = "";
+            this.textBox6.Text = "";
             FormClients f = new FormClients();
             f.ShowDialog();
         }

@@ -54,6 +54,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._Эу_436_ДмитриеваDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.клиентыBindingNavigator)).BeginInit();
@@ -113,7 +114,7 @@
             this.клиентыBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.клиентыBindingNavigator.Name = "клиентыBindingNavigator";
             this.клиентыBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.клиентыBindingNavigator.Size = new System.Drawing.Size(681, 25);
+            this.клиентыBindingNavigator.Size = new System.Drawing.Size(691, 25);
             this.клиентыBindingNavigator.TabIndex = 0;
             this.клиентыBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -225,6 +226,7 @@
             this.клиентыDataGridView.DataSource = this.клиентыBindingSource;
             this.клиентыDataGridView.Location = new System.Drawing.Point(22, 54);
             this.клиентыDataGridView.Name = "клиентыDataGridView";
+            this.клиентыDataGridView.ReadOnly = true;
             this.клиентыDataGridView.Size = new System.Drawing.Size(642, 350);
             this.клиентыDataGridView.TabIndex = 1;
             this.клиентыDataGridView.DoubleClick += new System.EventHandler(this.клиентыDataGridView_DoubleClick);
@@ -241,36 +243,52 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "ФИО";
             this.dataGridViewTextBoxColumn2.HeaderText = "ФИО";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Марка_автомобиля";
             this.dataGridViewTextBoxColumn3.HeaderText = "Марка_автомобиля";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Номер_автомобиля";
             this.dataGridViewTextBoxColumn4.HeaderText = "Номер_автомобиля";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Номер_телефона";
             this.dataGridViewTextBoxColumn5.HeaderText = "Номер_телефона";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Год_выпуска";
             this.dataGridViewTextBoxColumn6.HeaderText = "Год_выпуска";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(205, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Создать нового клиента";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 431);
+            this.ClientSize = new System.Drawing.Size(691, 431);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.клиентыDataGridView);
             this.Controls.Add(this.клиентыBindingNavigator);
             this.Name = "FormClients";
@@ -313,5 +331,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Button button1;
     }
 }

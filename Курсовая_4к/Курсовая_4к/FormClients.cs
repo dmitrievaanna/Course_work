@@ -50,5 +50,11 @@ namespace Курсовая_4к
             fCC.releaseYear = _releaseYear;
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormNewClient f = new FormNewClient();
+            f.ShowDialog();
+        }
     }
 }

@@ -64,6 +64,12 @@
     <Compile Include="FormClientCard.Designer.cs">
       <DependentUpon>FormClientCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewClient.Designer.cs">
+      <DependentUpon>FormNewClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_КарточкаКлиента.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClientCard.resx">
       <DependentUpon>FormClientCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewClient.resx">
+      <DependentUpon>FormNewClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_КарточкаКлиента.resx">
       <DependentUpon>Form_КарточкаКлиента.cs</DependentUpon>
