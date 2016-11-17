@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Курсовая_4к</RootNamespace>
     <AssemblyName>Курсовая_4к</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,17 +65,23 @@
     <Compile Include="FormClientCard.Designer.cs">
       <DependentUpon>FormClientCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNameOfWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNameOfWorks.Designer.cs">
+      <DependentUpon>FormNameOfWorks.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNewClient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNewClient.Designer.cs">
       <DependentUpon>FormNewClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_КарточкаКлиента.cs">
+    <Compile Include="FormNewCompletedWork.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_КарточкаКлиента.Designer.cs">
-      <DependentUpon>Form_КарточкаКлиента.cs</DependentUpon>
+    <Compile Include="FormNewCompletedWork.Designer.cs">
+      <DependentUpon>FormNewCompletedWork.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,11 +99,14 @@
     <EmbeddedResource Include="FormClientCard.resx">
       <DependentUpon>FormClientCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormNameOfWorks.resx">
+      <DependentUpon>FormNameOfWorks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormNewClient.resx">
       <DependentUpon>FormNewClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_КарточкаКлиента.resx">
-      <DependentUpon>Form_КарточкаКлиента.cs</DependentUpon>
+    <EmbeddedResource Include="FormNewCompletedWork.resx">
+      <DependentUpon>FormNewCompletedWork.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +116,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

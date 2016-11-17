@@ -12,6 +12,7 @@ namespace Курсовая_4к
 {
     public partial class FormNewClient : Form
     {
+        bool _flag;
         public FormNewClient()
         {
             InitializeComponent();
@@ -43,9 +44,22 @@ namespace Курсовая_4к
             set { textBox5.Text = Convert.ToString(value); }
         }
 
+        public bool flag
+        {
+            get { return _flag; }
+            set { _flag = false; }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            _Эу_436_ДмитриеваDataSet.
+            this.queriesTableAdapter1.Добавить_клиента(clientName, autoMark, autoNumber, phoneNumber, releaseYear);
+            _flag = true;
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            _flag = false;
+            Close();
         }
     }
 }

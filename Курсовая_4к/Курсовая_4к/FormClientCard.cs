@@ -56,6 +56,8 @@ namespace Курсовая_4к
 
         private void FormClientCard_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "_Эу_436_ДмитриеваDataSet.Запрос_вывод_выполненных_работ". При необходимости она может быть перемещена или удалена.
+           
             // TODO: данная строка кода позволяет загрузить данные в таблицу "_Эу_436_ДмитриеваDataSet.Клиенты". При необходимости она может быть перемещена или удалена.
             this.клиентыTableAdapter.Fill(this._Эу_436_ДмитриеваDataSet.Клиенты);
 
@@ -71,6 +73,10 @@ namespace Курсовая_4к
             this.textBox6.Text = "";
             FormClients f = new FormClients();
             f.ShowDialog();
+            this.вывод_ВыполненныеРаботыКлиентаTableAdapter.Fill(this._Эу_436_ДмитриеваDataSet.Вывод_ВыполненныеРаботыКлиента, Convert.ToInt32(textBox1.Text));
         }
+
+
+       
     }
 }

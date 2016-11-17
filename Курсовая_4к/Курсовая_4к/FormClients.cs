@@ -55,6 +55,13 @@ namespace Курсовая_4к
         {
             FormNewClient f = new FormNewClient();
             f.ShowDialog();
+            if(f.flag==true)
+                this.клиентыTableAdapter.Fill(this._Эу_436_ДмитриеваDataSet.Клиенты);
+        }
+
+        private void клиентыBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
         }
     }
 }

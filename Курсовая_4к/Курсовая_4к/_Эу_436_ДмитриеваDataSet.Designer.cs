@@ -38,9 +38,9 @@ namespace Курсовая_4к {
         
         private Наименования_работDataTable tableНаименования_работ;
         
-        private ВыводВыполненныхРаботКлиентаDataTable tableВыводВыполненныхРаботКлиента;
+        private Запрос_ВыполненныеРаботыDataTable tableЗапрос_ВыполненныеРаботы;
         
-        private Запрос_вывод_выполненных_работDataTable tableЗапрос_вывод_выполненных_работ;
+        private Вывод_ВыполненныеРаботыКлиентаDataTable tableВывод_ВыполненныеРаботыКлиента;
         
         private global::System.Data.DataRelation relationFK_Выполненные_работы_Клиенты;
         
@@ -105,11 +105,11 @@ namespace Курсовая_4к {
                 if ((ds.Tables["Наименования_работ"] != null)) {
                     base.Tables.Add(new Наименования_работDataTable(ds.Tables["Наименования_работ"]));
                 }
-                if ((ds.Tables["ВыводВыполненныхРаботКлиента"] != null)) {
-                    base.Tables.Add(new ВыводВыполненныхРаботКлиентаDataTable(ds.Tables["ВыводВыполненныхРаботКлиента"]));
+                if ((ds.Tables["Запрос_ВыполненныеРаботы"] != null)) {
+                    base.Tables.Add(new Запрос_ВыполненныеРаботыDataTable(ds.Tables["Запрос_ВыполненныеРаботы"]));
                 }
-                if ((ds.Tables["Запрос_вывод_выполненных_работ"] != null)) {
-                    base.Tables.Add(new Запрос_вывод_выполненных_работDataTable(ds.Tables["Запрос_вывод_выполненных_работ"]));
+                if ((ds.Tables["Вывод_ВыполненныеРаботыКлиента"] != null)) {
+                    base.Tables.Add(new Вывод_ВыполненныеРаботыКлиентаDataTable(ds.Tables["Вывод_ВыполненныеРаботыКлиента"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -203,9 +203,9 @@ namespace Курсовая_4к {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ВыводВыполненныхРаботКлиентаDataTable ВыводВыполненныхРаботКлиента {
+        public Запрос_ВыполненныеРаботыDataTable Запрос_ВыполненныеРаботы {
             get {
-                return this.tableВыводВыполненныхРаботКлиента;
+                return this.tableЗапрос_ВыполненныеРаботы;
             }
         }
         
@@ -213,9 +213,9 @@ namespace Курсовая_4к {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Запрос_вывод_выполненных_работDataTable Запрос_вывод_выполненных_работ {
+        public Вывод_ВыполненныеРаботыКлиентаDataTable Вывод_ВыполненныеРаботыКлиента {
             get {
-                return this.tableЗапрос_вывод_выполненных_работ;
+                return this.tableВывод_ВыполненныеРаботыКлиента;
             }
         }
         
@@ -307,11 +307,11 @@ namespace Курсовая_4к {
                 if ((ds.Tables["Наименования_работ"] != null)) {
                     base.Tables.Add(new Наименования_работDataTable(ds.Tables["Наименования_работ"]));
                 }
-                if ((ds.Tables["ВыводВыполненныхРаботКлиента"] != null)) {
-                    base.Tables.Add(new ВыводВыполненныхРаботКлиентаDataTable(ds.Tables["ВыводВыполненныхРаботКлиента"]));
+                if ((ds.Tables["Запрос_ВыполненныеРаботы"] != null)) {
+                    base.Tables.Add(new Запрос_ВыполненныеРаботыDataTable(ds.Tables["Запрос_ВыполненныеРаботы"]));
                 }
-                if ((ds.Tables["Запрос_вывод_выполненных_работ"] != null)) {
-                    base.Tables.Add(new Запрос_вывод_выполненных_работDataTable(ds.Tables["Запрос_вывод_выполненных_работ"]));
+                if ((ds.Tables["Вывод_ВыполненныеРаботыКлиента"] != null)) {
+                    base.Tables.Add(new Вывод_ВыполненныеРаботыКлиентаDataTable(ds.Tables["Вывод_ВыполненныеРаботыКлиента"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -388,16 +388,16 @@ namespace Курсовая_4к {
                     this.tableНаименования_работ.InitVars();
                 }
             }
-            this.tableВыводВыполненныхРаботКлиента = ((ВыводВыполненныхРаботКлиентаDataTable)(base.Tables["ВыводВыполненныхРаботКлиента"]));
+            this.tableЗапрос_ВыполненныеРаботы = ((Запрос_ВыполненныеРаботыDataTable)(base.Tables["Запрос_ВыполненныеРаботы"]));
             if ((initTable == true)) {
-                if ((this.tableВыводВыполненныхРаботКлиента != null)) {
-                    this.tableВыводВыполненныхРаботКлиента.InitVars();
+                if ((this.tableЗапрос_ВыполненныеРаботы != null)) {
+                    this.tableЗапрос_ВыполненныеРаботы.InitVars();
                 }
             }
-            this.tableЗапрос_вывод_выполненных_работ = ((Запрос_вывод_выполненных_работDataTable)(base.Tables["Запрос_вывод_выполненных_работ"]));
+            this.tableВывод_ВыполненныеРаботыКлиента = ((Вывод_ВыполненныеРаботыКлиентаDataTable)(base.Tables["Вывод_ВыполненныеРаботыКлиента"]));
             if ((initTable == true)) {
-                if ((this.tableЗапрос_вывод_выполненных_работ != null)) {
-                    this.tableЗапрос_вывод_выполненных_работ.InitVars();
+                if ((this.tableВывод_ВыполненныеРаботыКлиента != null)) {
+                    this.tableВывод_ВыполненныеРаботыКлиента.InitVars();
                 }
             }
             this.relationFK_Выполненные_работы_Клиенты = this.Relations["FK_Выполненные_работы_Клиенты"];
@@ -431,10 +431,10 @@ namespace Курсовая_4к {
             base.Tables.Add(this.tableНаименования_деталей);
             this.tableНаименования_работ = new Наименования_работDataTable();
             base.Tables.Add(this.tableНаименования_работ);
-            this.tableВыводВыполненныхРаботКлиента = new ВыводВыполненныхРаботКлиентаDataTable();
-            base.Tables.Add(this.tableВыводВыполненныхРаботКлиента);
-            this.tableЗапрос_вывод_выполненных_работ = new Запрос_вывод_выполненных_работDataTable();
-            base.Tables.Add(this.tableЗапрос_вывод_выполненных_работ);
+            this.tableЗапрос_ВыполненныеРаботы = new Запрос_ВыполненныеРаботыDataTable();
+            base.Tables.Add(this.tableЗапрос_ВыполненныеРаботы);
+            this.tableВывод_ВыполненныеРаботыКлиента = new Вывод_ВыполненныеРаботыКлиентаDataTable();
+            base.Tables.Add(this.tableВывод_ВыполненныеРаботыКлиента);
             this.relationFK_Выполненные_работы_Клиенты = new global::System.Data.DataRelation("FK_Выполненные_работы_Клиенты", new global::System.Data.DataColumn[] {
                         this.tableКлиенты.id_клиентаColumn}, new global::System.Data.DataColumn[] {
                         this.tableВыполненные_работы.id_клиентаColumn}, false);
@@ -509,13 +509,13 @@ namespace Курсовая_4к {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeВыводВыполненныхРаботКлиента() {
+        private bool ShouldSerializeЗапрос_ВыполненныеРаботы() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeЗапрос_вывод_выполненных_работ() {
+        private bool ShouldSerializeВывод_ВыполненныеРаботыКлиента() {
             return false;
         }
         
@@ -596,10 +596,10 @@ namespace Курсовая_4к {
         public delegate void Наименования_работRowChangeEventHandler(object sender, Наименования_работRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void ВыводВыполненныхРаботКлиентаRowChangeEventHandler(object sender, ВыводВыполненныхРаботКлиентаRowChangeEvent e);
+        public delegate void Запрос_ВыполненныеРаботыRowChangeEventHandler(object sender, Запрос_ВыполненныеРаботыRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void Запрос_вывод_выполненных_работRowChangeEventHandler(object sender, Запрос_вывод_выполненных_работRowChangeEvent e);
+        public delegate void Вывод_ВыполненныеРаботыКлиентаRowChangeEventHandler(object sender, Вывод_ВыполненныеРаботыКлиентаRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2761,7 +2761,13 @@ namespace Курсовая_4к {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ВыводВыполненныхРаботКлиентаDataTable : global::System.Data.TypedTableBase<ВыводВыполненныхРаботКлиентаRow> {
+        public partial class Запрос_ВыполненныеРаботыDataTable : global::System.Data.TypedTableBase<Запрос_ВыполненныеРаботыRow> {
+            
+            private global::System.Data.DataColumn columnНаименование_работы;
+            
+            private global::System.Data.DataColumn columnНормо_часы;
+            
+            private global::System.Data.DataColumn columnЦена;
             
             private global::System.Data.DataColumn columnid_записи;
             
@@ -2773,8 +2779,8 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаDataTable() {
-                this.TableName = "ВыводВыполненныхРаботКлиента";
+            public Запрос_ВыполненныеРаботыDataTable() {
+                this.TableName = "Запрос_ВыполненныеРаботы";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2782,7 +2788,7 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ВыводВыполненныхРаботКлиентаDataTable(global::System.Data.DataTable table) {
+            internal Запрос_ВыполненныеРаботыDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2799,9 +2805,33 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected ВыводВыполненныхРаботКлиентаDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Запрос_ВыполненныеРаботыDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Наименование_работыColumn {
+                get {
+                    return this.columnНаименование_работы;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Нормо_часыColumn {
+                get {
+                    return this.columnНормо_часы;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ЦенаColumn {
+                get {
+                    return this.columnЦена;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2847,55 +2877,58 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаRow this[int index] {
+            public Запрос_ВыполненныеРаботыRow this[int index] {
                 get {
-                    return ((ВыводВыполненныхРаботКлиентаRow)(this.Rows[index]));
+                    return ((Запрос_ВыполненныеРаботыRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ВыводВыполненныхРаботКлиентаRowChangeEventHandler ВыводВыполненныхРаботКлиентаRowChanging;
+            public event Запрос_ВыполненныеРаботыRowChangeEventHandler Запрос_ВыполненныеРаботыRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ВыводВыполненныхРаботКлиентаRowChangeEventHandler ВыводВыполненныхРаботКлиентаRowChanged;
+            public event Запрос_ВыполненныеРаботыRowChangeEventHandler Запрос_ВыполненныеРаботыRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ВыводВыполненныхРаботКлиентаRowChangeEventHandler ВыводВыполненныхРаботКлиентаRowDeleting;
+            public event Запрос_ВыполненныеРаботыRowChangeEventHandler Запрос_ВыполненныеРаботыRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ВыводВыполненныхРаботКлиентаRowChangeEventHandler ВыводВыполненныхРаботКлиентаRowDeleted;
+            public event Запрос_ВыполненныеРаботыRowChangeEventHandler Запрос_ВыполненныеРаботыRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddВыводВыполненныхРаботКлиентаRow(ВыводВыполненныхРаботКлиентаRow row) {
+            public void AddЗапрос_ВыполненныеРаботыRow(Запрос_ВыполненныеРаботыRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаRow AddВыводВыполненныхРаботКлиентаRow(int id_клиента, int id_наименования_работы, int Количество) {
-                ВыводВыполненныхРаботКлиентаRow rowВыводВыполненныхРаботКлиентаRow = ((ВыводВыполненныхРаботКлиентаRow)(this.NewRow()));
+            public Запрос_ВыполненныеРаботыRow AddЗапрос_ВыполненныеРаботыRow(string Наименование_работы, float Нормо_часы, float Цена, int id_записи, int id_клиента, int id_наименования_работы, int Количество) {
+                Запрос_ВыполненныеРаботыRow rowЗапрос_ВыполненныеРаботыRow = ((Запрос_ВыполненныеРаботыRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        Наименование_работы,
+                        Нормо_часы,
+                        Цена,
+                        id_записи,
                         id_клиента,
                         id_наименования_работы,
                         Количество};
-                rowВыводВыполненныхРаботКлиентаRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowВыводВыполненныхРаботКлиентаRow);
-                return rowВыводВыполненныхРаботКлиентаRow;
+                rowЗапрос_ВыполненныеРаботыRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowЗапрос_ВыполненныеРаботыRow);
+                return rowЗапрос_ВыполненныеРаботыRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаRow FindByid_записи(int id_записи) {
-                return ((ВыводВыполненныхРаботКлиентаRow)(this.Rows.Find(new object[] {
+            public Запрос_ВыполненныеРаботыRow FindByid_записи(int id_записи) {
+                return ((Запрос_ВыполненныеРаботыRow)(this.Rows.Find(new object[] {
                             id_записи})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ВыводВыполненныхРаботКлиентаDataTable cln = ((ВыводВыполненныхРаботКлиентаDataTable)(base.Clone()));
+                Запрос_ВыполненныеРаботыDataTable cln = ((Запрос_ВыполненныеРаботыDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2903,12 +2936,15 @@ namespace Курсовая_4к {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ВыводВыполненныхРаботКлиентаDataTable();
+                return new Запрос_ВыполненныеРаботыDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnНаименование_работы = base.Columns["Наименование_работы"];
+                this.columnНормо_часы = base.Columns["Нормо_часы"];
+                this.columnЦена = base.Columns["Цена"];
                 this.columnid_записи = base.Columns["id_записи"];
                 this.columnid_клиента = base.Columns["id_клиента"];
                 this.columnid_наименования_работы = base.Columns["id_наименования_работы"];
@@ -2918,6 +2954,12 @@ namespace Курсовая_4к {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnНаименование_работы = new global::System.Data.DataColumn("Наименование_работы", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnНаименование_работы);
+                this.columnНормо_часы = new global::System.Data.DataColumn("Нормо_часы", typeof(float), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnНормо_часы);
+                this.columnЦена = new global::System.Data.DataColumn("Цена", typeof(float), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnЦена);
                 this.columnid_записи = new global::System.Data.DataColumn("id_записи", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_записи);
                 this.columnid_клиента = new global::System.Data.DataColumn("id_клиента", typeof(int), null, global::System.Data.MappingType.Element);
@@ -2928,36 +2970,35 @@ namespace Курсовая_4к {
                 base.Columns.Add(this.columnКоличество);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_записи}, true));
-                this.columnid_записи.AutoIncrement = true;
+                this.columnНаименование_работы.MaxLength = 50;
                 this.columnid_записи.AllowDBNull = false;
-                this.columnid_записи.ReadOnly = true;
                 this.columnid_записи.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаRow NewВыводВыполненныхРаботКлиентаRow() {
-                return ((ВыводВыполненныхРаботКлиентаRow)(this.NewRow()));
+            public Запрос_ВыполненныеРаботыRow NewЗапрос_ВыполненныеРаботыRow() {
+                return ((Запрос_ВыполненныеРаботыRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ВыводВыполненныхРаботКлиентаRow(builder);
+                return new Запрос_ВыполненныеРаботыRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ВыводВыполненныхРаботКлиентаRow);
+                return typeof(Запрос_ВыполненныеРаботыRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ВыводВыполненныхРаботКлиентаRowChanged != null)) {
-                    this.ВыводВыполненныхРаботКлиентаRowChanged(this, new ВыводВыполненныхРаботКлиентаRowChangeEvent(((ВыводВыполненныхРаботКлиентаRow)(e.Row)), e.Action));
+                if ((this.Запрос_ВыполненныеРаботыRowChanged != null)) {
+                    this.Запрос_ВыполненныеРаботыRowChanged(this, new Запрос_ВыполненныеРаботыRowChangeEvent(((Запрос_ВыполненныеРаботыRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2965,8 +3006,8 @@ namespace Курсовая_4к {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ВыводВыполненныхРаботКлиентаRowChanging != null)) {
-                    this.ВыводВыполненныхРаботКлиентаRowChanging(this, new ВыводВыполненныхРаботКлиентаRowChangeEvent(((ВыводВыполненныхРаботКлиентаRow)(e.Row)), e.Action));
+                if ((this.Запрос_ВыполненныеРаботыRowChanging != null)) {
+                    this.Запрос_ВыполненныеРаботыRowChanging(this, new Запрос_ВыполненныеРаботыRowChangeEvent(((Запрос_ВыполненныеРаботыRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2974,8 +3015,8 @@ namespace Курсовая_4к {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ВыводВыполненныхРаботКлиентаRowDeleted != null)) {
-                    this.ВыводВыполненныхРаботКлиентаRowDeleted(this, new ВыводВыполненныхРаботКлиентаRowChangeEvent(((ВыводВыполненныхРаботКлиентаRow)(e.Row)), e.Action));
+                if ((this.Запрос_ВыполненныеРаботыRowDeleted != null)) {
+                    this.Запрос_ВыполненныеРаботыRowDeleted(this, new Запрос_ВыполненныеРаботыRowChangeEvent(((Запрос_ВыполненныеРаботыRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2983,14 +3024,14 @@ namespace Курсовая_4к {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ВыводВыполненныхРаботКлиентаRowDeleting != null)) {
-                    this.ВыводВыполненныхРаботКлиентаRowDeleting(this, new ВыводВыполненныхРаботКлиентаRowChangeEvent(((ВыводВыполненныхРаботКлиентаRow)(e.Row)), e.Action));
+                if ((this.Запрос_ВыполненныеРаботыRowDeleting != null)) {
+                    this.Запрос_ВыполненныеРаботыRowDeleting(this, new Запрос_ВыполненныеРаботыRowChangeEvent(((Запрос_ВыполненныеРаботыRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveВыводВыполненныхРаботКлиентаRow(ВыводВыполненныхРаботКлиентаRow row) {
+            public void RemoveЗапрос_ВыполненныеРаботыRow(Запрос_ВыполненныеРаботыRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -3017,7 +3058,7 @@ namespace Курсовая_4к {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ВыводВыполненныхРаботКлиентаDataTable";
+                attribute2.FixedValue = "Запрос_ВыполненныеРаботыDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3063,7 +3104,13 @@ namespace Курсовая_4к {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Запрос_вывод_выполненных_работDataTable : global::System.Data.TypedTableBase<Запрос_вывод_выполненных_работRow> {
+        public partial class Вывод_ВыполненныеРаботыКлиентаDataTable : global::System.Data.TypedTableBase<Вывод_ВыполненныеРаботыКлиентаRow> {
+            
+            private global::System.Data.DataColumn columnНаименование_работы;
+            
+            private global::System.Data.DataColumn columnНормо_часы;
+            
+            private global::System.Data.DataColumn columnЦена;
             
             private global::System.Data.DataColumn columnid_записи;
             
@@ -3075,8 +3122,8 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работDataTable() {
-                this.TableName = "Запрос_вывод_выполненных_работ";
+            public Вывод_ВыполненныеРаботыКлиентаDataTable() {
+                this.TableName = "Вывод_ВыполненныеРаботыКлиента";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3084,7 +3131,7 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Запрос_вывод_выполненных_работDataTable(global::System.Data.DataTable table) {
+            internal Вывод_ВыполненныеРаботыКлиентаDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3101,9 +3148,33 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected Запрос_вывод_выполненных_работDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Вывод_ВыполненныеРаботыКлиентаDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Наименование_работыColumn {
+                get {
+                    return this.columnНаименование_работы;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Нормо_часыColumn {
+                get {
+                    return this.columnНормо_часы;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ЦенаColumn {
+                get {
+                    return this.columnЦена;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3149,55 +3220,58 @@ namespace Курсовая_4к {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работRow this[int index] {
+            public Вывод_ВыполненныеРаботыКлиентаRow this[int index] {
                 get {
-                    return ((Запрос_вывод_выполненных_работRow)(this.Rows[index]));
+                    return ((Вывод_ВыполненныеРаботыКлиентаRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Запрос_вывод_выполненных_работRowChangeEventHandler Запрос_вывод_выполненных_работRowChanging;
+            public event Вывод_ВыполненныеРаботыКлиентаRowChangeEventHandler Вывод_ВыполненныеРаботыКлиентаRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Запрос_вывод_выполненных_работRowChangeEventHandler Запрос_вывод_выполненных_работRowChanged;
+            public event Вывод_ВыполненныеРаботыКлиентаRowChangeEventHandler Вывод_ВыполненныеРаботыКлиентаRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Запрос_вывод_выполненных_работRowChangeEventHandler Запрос_вывод_выполненных_работRowDeleting;
+            public event Вывод_ВыполненныеРаботыКлиентаRowChangeEventHandler Вывод_ВыполненныеРаботыКлиентаRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Запрос_вывод_выполненных_работRowChangeEventHandler Запрос_вывод_выполненных_работRowDeleted;
+            public event Вывод_ВыполненныеРаботыКлиентаRowChangeEventHandler Вывод_ВыполненныеРаботыКлиентаRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddЗапрос_вывод_выполненных_работRow(Запрос_вывод_выполненных_работRow row) {
+            public void AddВывод_ВыполненныеРаботыКлиентаRow(Вывод_ВыполненныеРаботыКлиентаRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работRow AddЗапрос_вывод_выполненных_работRow(int id_записи, int id_клиента, int id_наименования_работы, int Количество) {
-                Запрос_вывод_выполненных_работRow rowЗапрос_вывод_выполненных_работRow = ((Запрос_вывод_выполненных_работRow)(this.NewRow()));
+            public Вывод_ВыполненныеРаботыКлиентаRow AddВывод_ВыполненныеРаботыКлиентаRow(string Наименование_работы, float Нормо_часы, float Цена, int id_записи, int id_клиента, int id_наименования_работы, int Количество) {
+                Вывод_ВыполненныеРаботыКлиентаRow rowВывод_ВыполненныеРаботыКлиентаRow = ((Вывод_ВыполненныеРаботыКлиентаRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        Наименование_работы,
+                        Нормо_часы,
+                        Цена,
                         id_записи,
                         id_клиента,
                         id_наименования_работы,
                         Количество};
-                rowЗапрос_вывод_выполненных_работRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowЗапрос_вывод_выполненных_работRow);
-                return rowЗапрос_вывод_выполненных_работRow;
+                rowВывод_ВыполненныеРаботыКлиентаRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowВывод_ВыполненныеРаботыКлиентаRow);
+                return rowВывод_ВыполненныеРаботыКлиентаRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работRow FindByid_записи(int id_записи) {
-                return ((Запрос_вывод_выполненных_работRow)(this.Rows.Find(new object[] {
+            public Вывод_ВыполненныеРаботыКлиентаRow FindByid_записи(int id_записи) {
+                return ((Вывод_ВыполненныеРаботыКлиентаRow)(this.Rows.Find(new object[] {
                             id_записи})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Запрос_вывод_выполненных_работDataTable cln = ((Запрос_вывод_выполненных_работDataTable)(base.Clone()));
+                Вывод_ВыполненныеРаботыКлиентаDataTable cln = ((Вывод_ВыполненныеРаботыКлиентаDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -3205,12 +3279,15 @@ namespace Курсовая_4к {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Запрос_вывод_выполненных_работDataTable();
+                return new Вывод_ВыполненныеРаботыКлиентаDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnНаименование_работы = base.Columns["Наименование_работы"];
+                this.columnНормо_часы = base.Columns["Нормо_часы"];
+                this.columnЦена = base.Columns["Цена"];
                 this.columnid_записи = base.Columns["id_записи"];
                 this.columnid_клиента = base.Columns["id_клиента"];
                 this.columnid_наименования_работы = base.Columns["id_наименования_работы"];
@@ -3220,6 +3297,12 @@ namespace Курсовая_4к {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnНаименование_работы = new global::System.Data.DataColumn("Наименование_работы", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnНаименование_работы);
+                this.columnНормо_часы = new global::System.Data.DataColumn("Нормо_часы", typeof(float), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnНормо_часы);
+                this.columnЦена = new global::System.Data.DataColumn("Цена", typeof(float), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnЦена);
                 this.columnid_записи = new global::System.Data.DataColumn("id_записи", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnid_записи);
                 this.columnid_клиента = new global::System.Data.DataColumn("id_клиента", typeof(int), null, global::System.Data.MappingType.Element);
@@ -3230,34 +3313,35 @@ namespace Курсовая_4к {
                 base.Columns.Add(this.columnКоличество);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_записи}, true));
+                this.columnНаименование_работы.MaxLength = 50;
                 this.columnid_записи.AllowDBNull = false;
                 this.columnid_записи.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работRow NewЗапрос_вывод_выполненных_работRow() {
-                return ((Запрос_вывод_выполненных_работRow)(this.NewRow()));
+            public Вывод_ВыполненныеРаботыКлиентаRow NewВывод_ВыполненныеРаботыКлиентаRow() {
+                return ((Вывод_ВыполненныеРаботыКлиентаRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Запрос_вывод_выполненных_работRow(builder);
+                return new Вывод_ВыполненныеРаботыКлиентаRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Запрос_вывод_выполненных_работRow);
+                return typeof(Вывод_ВыполненныеРаботыКлиентаRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Запрос_вывод_выполненных_работRowChanged != null)) {
-                    this.Запрос_вывод_выполненных_работRowChanged(this, new Запрос_вывод_выполненных_работRowChangeEvent(((Запрос_вывод_выполненных_работRow)(e.Row)), e.Action));
+                if ((this.Вывод_ВыполненныеРаботыКлиентаRowChanged != null)) {
+                    this.Вывод_ВыполненныеРаботыКлиентаRowChanged(this, new Вывод_ВыполненныеРаботыКлиентаRowChangeEvent(((Вывод_ВыполненныеРаботыКлиентаRow)(e.Row)), e.Action));
                 }
             }
             
@@ -3265,8 +3349,8 @@ namespace Курсовая_4к {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Запрос_вывод_выполненных_работRowChanging != null)) {
-                    this.Запрос_вывод_выполненных_работRowChanging(this, new Запрос_вывод_выполненных_работRowChangeEvent(((Запрос_вывод_выполненных_работRow)(e.Row)), e.Action));
+                if ((this.Вывод_ВыполненныеРаботыКлиентаRowChanging != null)) {
+                    this.Вывод_ВыполненныеРаботыКлиентаRowChanging(this, new Вывод_ВыполненныеРаботыКлиентаRowChangeEvent(((Вывод_ВыполненныеРаботыКлиентаRow)(e.Row)), e.Action));
                 }
             }
             
@@ -3274,8 +3358,8 @@ namespace Курсовая_4к {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Запрос_вывод_выполненных_работRowDeleted != null)) {
-                    this.Запрос_вывод_выполненных_работRowDeleted(this, new Запрос_вывод_выполненных_работRowChangeEvent(((Запрос_вывод_выполненных_работRow)(e.Row)), e.Action));
+                if ((this.Вывод_ВыполненныеРаботыКлиентаRowDeleted != null)) {
+                    this.Вывод_ВыполненныеРаботыКлиентаRowDeleted(this, new Вывод_ВыполненныеРаботыКлиентаRowChangeEvent(((Вывод_ВыполненныеРаботыКлиентаRow)(e.Row)), e.Action));
                 }
             }
             
@@ -3283,14 +3367,14 @@ namespace Курсовая_4к {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Запрос_вывод_выполненных_работRowDeleting != null)) {
-                    this.Запрос_вывод_выполненных_работRowDeleting(this, new Запрос_вывод_выполненных_работRowChangeEvent(((Запрос_вывод_выполненных_работRow)(e.Row)), e.Action));
+                if ((this.Вывод_ВыполненныеРаботыКлиентаRowDeleting != null)) {
+                    this.Вывод_ВыполненныеРаботыКлиентаRowDeleting(this, new Вывод_ВыполненныеРаботыКлиентаRowChangeEvent(((Вывод_ВыполненныеРаботыКлиентаRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveЗапрос_вывод_выполненных_работRow(Запрос_вывод_выполненных_работRow row) {
+            public void RemoveВывод_ВыполненныеРаботыКлиентаRow(Вывод_ВыполненныеРаботыКлиентаRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -3317,7 +3401,7 @@ namespace Курсовая_4к {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Запрос_вывод_выполненных_работDataTable";
+                attribute2.FixedValue = "Вывод_ВыполненныеРаботыКлиентаDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4290,25 +4374,75 @@ namespace Курсовая_4к {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ВыводВыполненныхРаботКлиентаRow : global::System.Data.DataRow {
+        public partial class Запрос_ВыполненныеРаботыRow : global::System.Data.DataRow {
             
-            private ВыводВыполненныхРаботКлиентаDataTable tableВыводВыполненныхРаботКлиента;
+            private Запрос_ВыполненныеРаботыDataTable tableЗапрос_ВыполненныеРаботы;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ВыводВыполненныхРаботКлиентаRow(global::System.Data.DataRowBuilder rb) : 
+            internal Запрос_ВыполненныеРаботыRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableВыводВыполненныхРаботКлиента = ((ВыводВыполненныхРаботКлиентаDataTable)(this.Table));
+                this.tableЗапрос_ВыполненныеРаботы = ((Запрос_ВыполненныеРаботыDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Наименование_работы {
+                get {
+                    try {
+                        return ((string)(this[this.tableЗапрос_ВыполненныеРаботы.Наименование_работыColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Наименование_работы\' в таблице \'Запрос_ВыполненныеРаботы\' р" +
+                                "авно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableЗапрос_ВыполненныеРаботы.Наименование_работыColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public float Нормо_часы {
+                get {
+                    try {
+                        return ((float)(this[this.tableЗапрос_ВыполненныеРаботы.Нормо_часыColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Нормо_часы\' в таблице \'Запрос_ВыполненныеРаботы\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableЗапрос_ВыполненныеРаботы.Нормо_часыColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public float Цена {
+                get {
+                    try {
+                        return ((float)(this[this.tableЗапрос_ВыполненныеРаботы.ЦенаColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Цена\' в таблице \'Запрос_ВыполненныеРаботы\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableЗапрос_ВыполненныеРаботы.ЦенаColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id_записи {
                 get {
-                    return ((int)(this[this.tableВыводВыполненныхРаботКлиента.id_записиColumn]));
+                    return ((int)(this[this.tableЗапрос_ВыполненныеРаботы.id_записиColumn]));
                 }
                 set {
-                    this[this.tableВыводВыполненныхРаботКлиента.id_записиColumn] = value;
+                    this[this.tableЗапрос_ВыполненныеРаботы.id_записиColumn] = value;
                 }
             }
             
@@ -4317,15 +4451,15 @@ namespace Курсовая_4к {
             public int id_клиента {
                 get {
                     try {
-                        return ((int)(this[this.tableВыводВыполненныхРаботКлиента.id_клиентаColumn]));
+                        return ((int)(this[this.tableЗапрос_ВыполненныеРаботы.id_клиентаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_клиента\' в таблице \'ВыводВыполненныхРаботКлиента\' равно " +
-                                "DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_клиента\' в таблице \'Запрос_ВыполненныеРаботы\' равно DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableВыводВыполненныхРаботКлиента.id_клиентаColumn] = value;
+                    this[this.tableЗапрос_ВыполненныеРаботы.id_клиентаColumn] = value;
                 }
             }
             
@@ -4334,15 +4468,15 @@ namespace Курсовая_4к {
             public int id_наименования_работы {
                 get {
                     try {
-                        return ((int)(this[this.tableВыводВыполненныхРаботКлиента.id_наименования_работыColumn]));
+                        return ((int)(this[this.tableЗапрос_ВыполненныеРаботы.id_наименования_работыColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_наименования_работы\' в таблице \'ВыводВыполненныхРаботКли" +
-                                "ента\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_наименования_работы\' в таблице \'Запрос_ВыполненныеРаботы" +
+                                "\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableВыводВыполненныхРаботКлиента.id_наименования_работыColumn] = value;
+                    this[this.tableЗапрос_ВыполненныеРаботы.id_наименования_работыColumn] = value;
                 }
             }
             
@@ -4351,77 +4485,164 @@ namespace Курсовая_4к {
             public int Количество {
                 get {
                     try {
-                        return ((int)(this[this.tableВыводВыполненныхРаботКлиента.КоличествоColumn]));
+                        return ((int)(this[this.tableЗапрос_ВыполненныеРаботы.КоличествоColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Количество\' в таблице \'ВыводВыполненныхРаботКлиента\' равно " +
-                                "DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Количество\' в таблице \'Запрос_ВыполненныеРаботы\' равно DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableВыводВыполненныхРаботКлиента.КоличествоColumn] = value;
+                    this[this.tableЗапрос_ВыполненныеРаботы.КоличествоColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsНаименование_работыNull() {
+                return this.IsNull(this.tableЗапрос_ВыполненныеРаботы.Наименование_работыColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetНаименование_работыNull() {
+                this[this.tableЗапрос_ВыполненныеРаботы.Наименование_работыColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsНормо_часыNull() {
+                return this.IsNull(this.tableЗапрос_ВыполненныеРаботы.Нормо_часыColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetНормо_часыNull() {
+                this[this.tableЗапрос_ВыполненныеРаботы.Нормо_часыColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsЦенаNull() {
+                return this.IsNull(this.tableЗапрос_ВыполненныеРаботы.ЦенаColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetЦенаNull() {
+                this[this.tableЗапрос_ВыполненныеРаботы.ЦенаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isid_клиентаNull() {
-                return this.IsNull(this.tableВыводВыполненныхРаботКлиента.id_клиентаColumn);
+                return this.IsNull(this.tableЗапрос_ВыполненныеРаботы.id_клиентаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setid_клиентаNull() {
-                this[this.tableВыводВыполненныхРаботКлиента.id_клиентаColumn] = global::System.Convert.DBNull;
+                this[this.tableЗапрос_ВыполненныеРаботы.id_клиентаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isid_наименования_работыNull() {
-                return this.IsNull(this.tableВыводВыполненныхРаботКлиента.id_наименования_работыColumn);
+                return this.IsNull(this.tableЗапрос_ВыполненныеРаботы.id_наименования_работыColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setid_наименования_работыNull() {
-                this[this.tableВыводВыполненныхРаботКлиента.id_наименования_работыColumn] = global::System.Convert.DBNull;
+                this[this.tableЗапрос_ВыполненныеРаботы.id_наименования_работыColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsКоличествоNull() {
-                return this.IsNull(this.tableВыводВыполненныхРаботКлиента.КоличествоColumn);
+                return this.IsNull(this.tableЗапрос_ВыполненныеРаботы.КоличествоColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetКоличествоNull() {
-                this[this.tableВыводВыполненныхРаботКлиента.КоличествоColumn] = global::System.Convert.DBNull;
+                this[this.tableЗапрос_ВыполненныеРаботы.КоличествоColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Запрос_вывод_выполненных_работRow : global::System.Data.DataRow {
+        public partial class Вывод_ВыполненныеРаботыКлиентаRow : global::System.Data.DataRow {
             
-            private Запрос_вывод_выполненных_работDataTable tableЗапрос_вывод_выполненных_работ;
+            private Вывод_ВыполненныеРаботыКлиентаDataTable tableВывод_ВыполненныеРаботыКлиента;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Запрос_вывод_выполненных_работRow(global::System.Data.DataRowBuilder rb) : 
+            internal Вывод_ВыполненныеРаботыКлиентаRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableЗапрос_вывод_выполненных_работ = ((Запрос_вывод_выполненных_работDataTable)(this.Table));
+                this.tableВывод_ВыполненныеРаботыКлиента = ((Вывод_ВыполненныеРаботыКлиентаDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Наименование_работы {
+                get {
+                    try {
+                        return ((string)(this[this.tableВывод_ВыполненныеРаботыКлиента.Наименование_работыColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Наименование_работы\' в таблице \'Вывод_ВыполненныеРаботыКлие" +
+                                "нта\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.Наименование_работыColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public float Нормо_часы {
+                get {
+                    try {
+                        return ((float)(this[this.tableВывод_ВыполненныеРаботыКлиента.Нормо_часыColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Нормо_часы\' в таблице \'Вывод_ВыполненныеРаботыКлиента\' равн" +
+                                "о DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.Нормо_часыColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public float Цена {
+                get {
+                    try {
+                        return ((float)(this[this.tableВывод_ВыполненныеРаботыКлиента.ЦенаColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Цена\' в таблице \'Вывод_ВыполненныеРаботыКлиента\' равно DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.ЦенаColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id_записи {
                 get {
-                    return ((int)(this[this.tableЗапрос_вывод_выполненных_работ.id_записиColumn]));
+                    return ((int)(this[this.tableВывод_ВыполненныеРаботыКлиента.id_записиColumn]));
                 }
                 set {
-                    this[this.tableЗапрос_вывод_выполненных_работ.id_записиColumn] = value;
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.id_записиColumn] = value;
                 }
             }
             
@@ -4430,15 +4651,15 @@ namespace Курсовая_4к {
             public int id_клиента {
                 get {
                     try {
-                        return ((int)(this[this.tableЗапрос_вывод_выполненных_работ.id_клиентаColumn]));
+                        return ((int)(this[this.tableВывод_ВыполненныеРаботыКлиента.id_клиентаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_клиента\' в таблице \'Запрос_вывод_выполненных_работ\' равн" +
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_клиента\' в таблице \'Вывод_ВыполненныеРаботыКлиента\' равн" +
                                 "о DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableЗапрос_вывод_выполненных_работ.id_клиентаColumn] = value;
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.id_клиентаColumn] = value;
                 }
             }
             
@@ -4447,15 +4668,15 @@ namespace Курсовая_4к {
             public int id_наименования_работы {
                 get {
                     try {
-                        return ((int)(this[this.tableЗапрос_вывод_выполненных_работ.id_наименования_работыColumn]));
+                        return ((int)(this[this.tableВывод_ВыполненныеРаботыКлиента.id_наименования_работыColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_наименования_работы\' в таблице \'Запрос_вывод_выполненных" +
-                                "_работ\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'id_наименования_работы\' в таблице \'Вывод_ВыполненныеРаботыК" +
+                                "лиента\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableЗапрос_вывод_выполненных_работ.id_наименования_работыColumn] = value;
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.id_наименования_работыColumn] = value;
                 }
             }
             
@@ -4464,52 +4685,88 @@ namespace Курсовая_4к {
             public int Количество {
                 get {
                     try {
-                        return ((int)(this[this.tableЗапрос_вывод_выполненных_работ.КоличествоColumn]));
+                        return ((int)(this[this.tableВывод_ВыполненныеРаботыКлиента.КоличествоColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Количество\' в таблице \'Запрос_вывод_выполненных_работ\' равн" +
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Количество\' в таблице \'Вывод_ВыполненныеРаботыКлиента\' равн" +
                                 "о DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableЗапрос_вывод_выполненных_работ.КоличествоColumn] = value;
+                    this[this.tableВывод_ВыполненныеРаботыКлиента.КоличествоColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsНаименование_работыNull() {
+                return this.IsNull(this.tableВывод_ВыполненныеРаботыКлиента.Наименование_работыColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetНаименование_работыNull() {
+                this[this.tableВывод_ВыполненныеРаботыКлиента.Наименование_работыColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsНормо_часыNull() {
+                return this.IsNull(this.tableВывод_ВыполненныеРаботыКлиента.Нормо_часыColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetНормо_часыNull() {
+                this[this.tableВывод_ВыполненныеРаботыКлиента.Нормо_часыColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsЦенаNull() {
+                return this.IsNull(this.tableВывод_ВыполненныеРаботыКлиента.ЦенаColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetЦенаNull() {
+                this[this.tableВывод_ВыполненныеРаботыКлиента.ЦенаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isid_клиентаNull() {
-                return this.IsNull(this.tableЗапрос_вывод_выполненных_работ.id_клиентаColumn);
+                return this.IsNull(this.tableВывод_ВыполненныеРаботыКлиента.id_клиентаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setid_клиентаNull() {
-                this[this.tableЗапрос_вывод_выполненных_работ.id_клиентаColumn] = global::System.Convert.DBNull;
+                this[this.tableВывод_ВыполненныеРаботыКлиента.id_клиентаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isid_наименования_работыNull() {
-                return this.IsNull(this.tableЗапрос_вывод_выполненных_работ.id_наименования_работыColumn);
+                return this.IsNull(this.tableВывод_ВыполненныеРаботыКлиента.id_наименования_работыColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setid_наименования_работыNull() {
-                this[this.tableЗапрос_вывод_выполненных_работ.id_наименования_работыColumn] = global::System.Convert.DBNull;
+                this[this.tableВывод_ВыполненныеРаботыКлиента.id_наименования_работыColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsКоличествоNull() {
-                return this.IsNull(this.tableЗапрос_вывод_выполненных_работ.КоличествоColumn);
+                return this.IsNull(this.tableВывод_ВыполненныеРаботыКлиента.КоличествоColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetКоличествоNull() {
-                this[this.tableЗапрос_вывод_выполненных_работ.КоличествоColumn] = global::System.Convert.DBNull;
+                this[this.tableВывод_ВыполненныеРаботыКлиента.КоличествоColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4755,22 +5012,22 @@ namespace Курсовая_4к {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class ВыводВыполненныхРаботКлиентаRowChangeEvent : global::System.EventArgs {
+        public class Запрос_ВыполненныеРаботыRowChangeEvent : global::System.EventArgs {
             
-            private ВыводВыполненныхРаботКлиентаRow eventRow;
+            private Запрос_ВыполненныеРаботыRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаRowChangeEvent(ВыводВыполненныхРаботКлиентаRow row, global::System.Data.DataRowAction action) {
+            public Запрос_ВыполненныеРаботыRowChangeEvent(Запрос_ВыполненныеРаботыRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ВыводВыполненныхРаботКлиентаRow Row {
+            public Запрос_ВыполненныеРаботыRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -4789,22 +5046,22 @@ namespace Курсовая_4к {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class Запрос_вывод_выполненных_работRowChangeEvent : global::System.EventArgs {
+        public class Вывод_ВыполненныеРаботыКлиентаRowChangeEvent : global::System.EventArgs {
             
-            private Запрос_вывод_выполненных_работRow eventRow;
+            private Вывод_ВыполненныеРаботыКлиентаRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работRowChangeEvent(Запрос_вывод_выполненных_работRow row, global::System.Data.DataRowAction action) {
+            public Вывод_ВыполненныеРаботыКлиентаRowChangeEvent(Вывод_ВыполненныеРаботыКлиентаRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Запрос_вывод_выполненных_работRow Row {
+            public Вывод_ВыполненныеРаботыКлиентаRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -7590,7 +7847,7 @@ SELECT id_работы, Наименование_работы, Нормо_час
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ВыводВыполненныхРаботКлиентаTableAdapter : global::System.ComponentModel.Component {
+    public partial class Запрос_ВыполненныеРаботыTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -7604,7 +7861,7 @@ SELECT id_работы, Наименование_работы, Нормо_час
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public ВыводВыполненныхРаботКлиентаTableAdapter() {
+        public Запрос_ВыполненныеРаботыTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -7701,7 +7958,10 @@ SELECT id_работы, Наименование_работы, Нормо_час
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "ВыводВыполненныхРаботКлиента";
+            tableMapping.DataSetTable = "Запрос_ВыполненныеРаботы";
+            tableMapping.ColumnMappings.Add("Наименование_работы", "Наименование_работы");
+            tableMapping.ColumnMappings.Add("Нормо_часы", "Нормо_часы");
+            tableMapping.ColumnMappings.Add("Цена", "Цена");
             tableMapping.ColumnMappings.Add("id_записи", "id_записи");
             tableMapping.ColumnMappings.Add("id_клиента", "id_клиента");
             tableMapping.ColumnMappings.Add("id_наименования_работы", "id_наименования_работы");
@@ -7722,24 +7982,17 @@ SELECT id_работы, Наименование_работы, Нормо_час
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.ВыводВыполненныхРаботКлиента";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_client", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].CommandText = "SELECT Наименование_работы, Нормо_часы, Цена, id_записи, id_клиента, id_наименова" +
+                "ния_работы, Количество FROM dbo.Запрос_ВыполненныеРаботы";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_Эу_436_ДмитриеваDataSet.ВыводВыполненныхРаботКлиентаDataTable dataTable, global::System.Nullable<int> id_client) {
+        public virtual int Fill(_Эу_436_ДмитриеваDataSet.Запрос_ВыполненныеРаботыDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((id_client.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(id_client.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -7751,15 +8004,9 @@ SELECT id_работы, Наименование_работы, Нормо_час
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _Эу_436_ДмитриеваDataSet.ВыводВыполненныхРаботКлиентаDataTable GetData(global::System.Nullable<int> id_client) {
+        public virtual _Эу_436_ДмитриеваDataSet.Запрос_ВыполненныеРаботыDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((id_client.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(id_client.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            _Эу_436_ДмитриеваDataSet.ВыводВыполненныхРаботКлиентаDataTable dataTable = new _Эу_436_ДмитриеваDataSet.ВыводВыполненныхРаботКлиентаDataTable();
+            _Эу_436_ДмитриеваDataSet.Запрос_ВыполненныеРаботыDataTable dataTable = new _Эу_436_ДмитриеваDataSet.Запрос_ВыполненныеРаботыDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7774,7 +8021,7 @@ SELECT id_работы, Наименование_работы, Нормо_час
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Запрос_вывод_выполненных_работTableAdapter : global::System.ComponentModel.Component {
+    public partial class Вывод_ВыполненныеРаботыКлиентаTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -7788,7 +8035,7 @@ SELECT id_работы, Наименование_работы, Нормо_час
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Запрос_вывод_выполненных_работTableAdapter() {
+        public Вывод_ВыполненныеРаботыКлиентаTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -7885,7 +8132,10 @@ SELECT id_работы, Наименование_работы, Нормо_час
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Запрос_вывод_выполненных_работ";
+            tableMapping.DataSetTable = "Вывод_ВыполненныеРаботыКлиента";
+            tableMapping.ColumnMappings.Add("Наименование_работы", "Наименование_работы");
+            tableMapping.ColumnMappings.Add("Нормо_часы", "Нормо_часы");
+            tableMapping.ColumnMappings.Add("Цена", "Цена");
             tableMapping.ColumnMappings.Add("id_записи", "id_записи");
             tableMapping.ColumnMappings.Add("id_клиента", "id_клиента");
             tableMapping.ColumnMappings.Add("id_наименования_работы", "id_наименования_работы");
@@ -7906,17 +8156,24 @@ SELECT id_работы, Наименование_работы, Нормо_час
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id_записи, id_клиента, id_наименования_работы, Количество FROM dbo.Запрос_" +
-                "вывод_выполненных_работ";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].CommandText = "dbo.Вывод_ВыполненныеРаботыКлиента";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_client", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(_Эу_436_ДмитриеваDataSet.Запрос_вывод_выполненных_работDataTable dataTable) {
+        public virtual int Fill(_Эу_436_ДмитриеваDataSet.Вывод_ВыполненныеРаботыКлиентаDataTable dataTable, global::System.Nullable<int> id_client) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((id_client.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(id_client.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -7928,9 +8185,15 @@ SELECT id_работы, Наименование_работы, Нормо_час
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual _Эу_436_ДмитриеваDataSet.Запрос_вывод_выполненных_работDataTable GetData() {
+        public virtual _Эу_436_ДмитриеваDataSet.Вывод_ВыполненныеРаботыКлиентаDataTable GetData(global::System.Nullable<int> id_client) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            _Эу_436_ДмитриеваDataSet.Запрос_вывод_выполненных_работDataTable dataTable = new _Эу_436_ДмитриеваDataSet.Запрос_вывод_выполненных_работDataTable();
+            if ((id_client.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(id_client.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            _Эу_436_ДмитриеваDataSet.Вывод_ВыполненныеРаботыКлиентаDataTable dataTable = new _Эу_436_ДмитриеваDataSet.Вывод_ВыполненныеРаботыКлиентаDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
